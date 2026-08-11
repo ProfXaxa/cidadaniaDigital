@@ -3,220 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuide da Sua Saúde! - Uso Consciente de Medicamentos</title>
-    <!-- Google Fonts: Montserrat -->
+    <title>ApexTech — Soluções Inteligentes em Nuvem</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome para Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS Personalizado -->
+    <!-- CSS Externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <header class="navbar">
+    <!-- Header & Navegação -->
+    <header class="header">
         <div class="container nav-container">
-            <a href="#" class="logo"><i class="fa-solid fa-heart-pulse"></i> SaúdeSegura</a>
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                <span class="logo-text">ApexTech</span>
+            </a>
+
             <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#beneficios">Benefícios</a></li>
-                    <li><a href="#dicas">Dicas de Uso</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#contato" class="btn-nav">Contato</a></li>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#recursos" class="nav-link">Recursos</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
+
+            <div class="header-actions">
+                <a href="#contato" class="btn btn-primary nav-btn">Começar Agora</a>
+                <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section">
+        <section class="hero" id="home">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <h1>CUIDE DA SUA SAÚDE!</h1>
-                    <p class="subtitle">Uso Consciente de Medicamentos - Sua Segurança em Primeiro Lugar</p>
-                    <a href="#beneficios" class="btn btn-primary">Saiba Mais Sobre Uso Seguro</a>
+                    <span class="badge"><i class="fa-solid fa-sparkles"></i> Nova Versão 2.0 Lançada</span>
+                    <h1 class="hero-title">Acelere sua transformação digital com segurança</h1>
+                    <p class="hero-description">
+                        Automatize processos, otimize a gestão de dados e impulsione a produtividade da sua equipe com nossa plataforma SaaS intuitiva e escalável.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contato" class="btn btn-primary btn-lg">
+                            Testar Gratuitamente <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#recursos" class="btn btn-secondary btn-lg">
+                            <i class="fa-solid fa-circle-play"></i> Ver Demonstração
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">+99.9%</span>
+                            <span class="stat-label">Uptime Garantido</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10k+</span>
+                            <span class="stat-label">Empresas Ativas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Suporte Especializado</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Família sorridente e saudável">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Painel de Controle ApexTech em tela moderna">
                 </div>
             </div>
         </section>
 
-        <!-- Benefícios Section -->
-        <section id="beneficios" class="beneficios-section">
+        <!-- Recursos (Features) Section -->
+        <section class="features section" id="recursos">
             <div class="container">
-                <h2 class="section-title">BENEFÍCIOS</h2>
-                <div class="cards-grid">
-                    
-                    <!-- Card Green -->
-                    <div class="card card-green">
-                        <div class="card-header">
-                            <div class="icon-circle"><i class="fa-solid fa-exclamation"></i></div>
-                            <h3>ATENÇÃO!</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li>Não se automedique</li>
-                                <li>Medicamentos só com prescrição médica</li>
-                                <li>Respeite doses e horários</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer-img">
-                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=80" alt="Remédios e pílulas">
-                        </div>
-                    </div>
-
-                    <!-- Card Red -->
-                    <div class="card card-red">
-                        <div class="card-header">
-                            <div class="icon-circle"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                            <h3>OS PERIGOS DA AUTOMEDICAÇÃO</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li>Intoxicação medicamentosa</li>
-                                <li>Desenvolvimento de alergias</li>
-                                <li>Resistência a antibióticos</li>
-                                <li>Má qualidade de vida</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer-img">
-                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Médicos analisando diagnósticos">
-                        </div>
-                    </div>
-
-                    <!-- Card Blue -->
-                    <div class="card card-blue">
-                        <div class="card-header">
-                            <div class="icon-circle"><i class="fa-solid fa-check"></i></div>
-                            <h3>LEMBRE-SE: REMÉDIO NÃO É BALA!</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li>Use apenas com orientação médica</li>
-                                <li>Consulte profissionais certificados</li>
-                                <li>Mantenha medicamentos fora do alcance de crianças</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer-img">
-                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80" alt="Profissionais de Saúde">
-                        </div>
-                    </div>
-
+                <div class="section-header">
+                    <span class="section-subtitle">Recursos Exclusivos</span>
+                    <h2 class="section-title">Construído para alta performance e segurança</h2>
+                    <p class="section-description">
+                        Oferecemos um ecossistema completo de ferramentas para garantir eficiência máxima em seus projetos.
+                    </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- Tipos de Uso Seguro Section -->
-        <section id="dicas" class="dicas-section">
-            <div class="container">
-                <h2 class="section-title">TIPOS DE USO SEGUROS</h2>
-                <div class="dicas-wrapper">
-                    <div class="banner-red">
-                        <h2>Dicas Para o Uso Seguro</h2>
+                <div class="features-grid">
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="feature-title">Segurança de Ponta</h3>
+                        <p class="feature-text">
+                            Criptografia de ponta a ponta e conformidade estrita com LGPD e GDPR para proteger seus dados.
+                        </p>
                     </div>
-                    <div class="grid-icons">
-                        <div class="grid-item">
-                            <i class="fa-solid fa-square-check check-icon"></i>
-                            <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&w=300&q=80" alt="Organização de medicamentos">
+
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bolt"></i>
                         </div>
-                        <div class="grid-item">
-                            <i class="fa-solid fa-calendar-check check-icon"></i>
-                            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=300&q=80" alt="Atendimento no prazo">
+                        <h3 class="feature-title">Processamento em Tempo Real</h3>
+                        <p class="feature-text">
+                            Análise instantânea de dados com dashboards dinâmicos e relatórios automatizados.
+                        </p>
+                    </div>
+
+                    <div class="card feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
                         </div>
-                        <div class="grid-item">
-                            <i class="fa-solid fa-trash-can alert-icon"></i>
-                            <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=300&q=80" alt="Descarte consciente">
-                        </div>
-                        <div class="grid-item">
-                            <i class="fa-solid fa-triangle-exclamation danger-icon"></i>
-                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=300&q=80" alt="Alerta de perigo">
-                        </div>
+                        <h3 class="feature-title">Integração Universal</h3>
+                        <p class="feature-text">
+                            Conecte-se facilmente às principais ferramentas do mercado através de nossa API REST robusta.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Depoimentos / Informação Section -->
-        <section id="depoimentos" class="testimonials-section">
+        <!-- Sobre / Showcase Section -->
+        <section class="about section" id="sobre">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" alt="Equipe trabalhando junta no ecossistema ApexTech">
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle">Sobre Nós</span>
+                    <h2 class="section-title">Desenvolvido por especialistas para equipes inovadoras</h2>
+                    <p class="about-text">
+                        Nossa missão é simplificar a complexidade tecnológica para que sua empresa foque no que realmente importa: crescer. Unimos design centrado no usuário com engenharia de alto desempenho.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Interface intuitiva e sem curva de aprendizado.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Escalabilidade automática de acordo com sua demanda.</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Equipe de suporte pronta para atender em português.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato / Formulário Section -->
+        <section class="contact section" id="contato">
             <div class="container">
-                <h2 class="section-title">DEPOIMENTOS / INFORMAÇÃO</h2>
-                <div class="testimonials-grid">
-                    
-                    <div class="testimonial-card">
-                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Equipe médica" class="team-img">
-                        <p class="quote">"O uso correto dos medicamentos garante a eficácia do tratamento e previne complicantes de saúde."</p>
-                        <div class="author">
-                            <strong>Dra. Márcia Mota</strong>
-                            <span>Farmacêutica</span>
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h2 class="contact-title">Pronto para transformar sua operação?</h2>
+                        <p class="contact-text">
+                            Preencha o formulário e um de nossos especialistas entrará em contato em menos de 15 minutos para agendar uma demonstração personalizada.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>contato@apextech.io</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+55 (11) 4003-8900</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="testimonial-quotes">
-                        <div class="green-quote-box">
-                            <p>"Tirar dúvidas diretamente com o profissional de saúde é o primeiro passo para o tratamento correto."</p>
-                            <div class="stars">★★★★★</div>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" class="form-input" placeholder="Seu nome completo">
+                            <span class="error-msg" id="name-error"></span>
                         </div>
-                        <div class="green-quote-box">
-                            <p>"Evite guardar sobras de remédios antigos em casa para não utilizá-los fora do prazo recomendado."</p>
-                            <div class="stars">★★★★★</div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail Corporativo</label>
+                            <input type="email" id="email" class="form-input" placeholder="seuemail@empresa.com">
+                            <span class="error-msg" id="email-error"></span>
                         </div>
-                    </div>
 
-                    <div class="badges-column">
-                        <div class="badge-item"><i class="fa-solid fa-award"></i> ISO 9001</div>
-                        <div class="badge-item"><i class="fa-solid fa-shield-halved"></i> Certificação ProSaúde</div>
-                        <div class="badge-item"><i class="fa-solid fa-user-check"></i> Profissionais Credenciados</div>
-                    </div>
+                        <div class="form-group">
+                            <label for="message">Como podemos ajudar?</label>
+                            <textarea id="message" class="form-input form-textarea" rows="4" placeholder="Descreva brevemente sua necessidade..."></textarea>
+                            <span class="error-msg" id="message-error"></span>
+                        </div>
 
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Solicitar Demonstração
+                        </button>
+                        <div class="form-feedback" id="form-feedback"></div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer id="contato" class="footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Contato</h3>
-                <p>Conscientização e Segurança em Saúde Familiar.</p>
-                <p><i class="fa-solid fa-phone"></i> (91) 93233-0530</p>
-                <p><i class="fa-solid fa-envelope"></i> contato@saudesegura.com.br</p>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fa-solid fa-cube"></i></span>
+                    <span class="logo-text">ApexTech</span>
+                </a>
+                <p class="footer-text">Tecnologia inteligente para empresas que pensam no futuro.</p>
             </div>
-            <div class="footer-col">
-                <h3>Orientação</h3>
+
+            <div class="footer-links">
+                <h4>Navegação</h4>
                 <ul>
-                    <li>Intoxicação Medicamentosa</li>
-                    <li>Prescrição Médica OBRIGATÓRIA</li>
-                    <li>Medicamentos Genéricos</li>
-                    <li>Doses e Horários Controlados</li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h3>Recursos</h3>
-                <ul>
-                    <li>Guia da Anvisa</li>
-                    <li>Postos de Atendimento</li>
-                    <li>Descarte Consciente</li>
-                    <li>Ouvidoria de Saúde</li>
-                </ul>
+
+            <div class="footer-social">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-        <div class="footer-disclaimer">
+        <div class="footer-bottom">
             <div class="container">
-                <p>As informações contidas neste site têm caráter meramente informativo e não substituem a consulta com profissionais de saúde habilitados.</p>
+                <p>&copy; 2026 ApexTech Inc. Todos os direitos reservados. Desenvolvido com foco em UI/UX.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript Personalizado -->
+    <!-- JavaScript Externo -->
     <script src="script.js"></script>
 </body>
 </html>
