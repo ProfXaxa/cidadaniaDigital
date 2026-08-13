@@ -1,178 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuide da Sua Saúde | Uso Consciente de Medicamentos</title>
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-    
-    <!-- Estilos Customizados -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="w-full min-h-screen bg-slate-50 text-slate-800">
-
-    <!-- HERO SECTION -->
-    <header class="hero-bg relative overflow-hidden">
-        <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
-            <div class="flex-1 text-white z-10">
-                <h1 class="font-extrabold text-4xl md:text-5xl leading-tight">
-                    CUIDE DA<br><span class="text-emerald-400">SUA SAÚDE!</span>
-                </h1>
-                <p class="mt-4 text-lg text-slate-200">
-                    Uso Consciente de Medicamentos - <strong class="text-white">Sua Segurança em Primeiro Lugar</strong>
-                </p>
-                <a href="#beneficios" class="inline-block mt-8 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-emerald-500/20 hover:-translate-y-0.5">
-                    Saiba Mais Sobre Uso Seguro
-                </a>
-            </div>
-            
-            <div class="flex-1 flex justify-center">
-                <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=800&auto=format&fit=crop" 
-                     alt="Família sorridente e saudável" 
-                     class="w-full max-w-md rounded-2xl shadow-2xl object-cover border-4 border-white/10" 
-                     loading="lazy">
-            </div>
-        </div>
-
-        <!-- Corações decorativos -->
-        <div class="absolute top-6 left-6 text-white/20 text-4xl select-none">♥</div>
-        <div class="absolute top-12 right-12 text-white/15 text-2xl select-none">♥</div>
-        <div class="absolute bottom-8 left-1/4 text-white/10 text-5xl select-none">♥</div>
-    </header>
-
-    <main>
-        <!-- SEÇÃO BENEFÍCIOS -->
-        <section id="beneficios" class="py-16 px-6">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-center font-bold text-3xl text-slate-900 mb-12 uppercase tracking-wide">
-                    BENEFÍCIOS
-                </h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    
-                    <!-- Card 1: Atenção -->
-                    <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-red-500 flex flex-col justify-between hover:shadow-xl transition-shadow">
-                        <div>
-                            <div class="flex items-center gap-3 mb-4">
-                                <span class="text-3xl">⚠️</span>
-                                <h3 class="font-bold text-xl text-slate-900">ATENÇÃO!</h3>
-                            </div>
-                            <ul class="space-y-2 text-sm text-slate-600 font-medium list-disc list-inside">
-                                <li>Não se automedique</li>
-                                <li>Medicamentos só com prescrição médica</li>
-                                <li>Respeite doses e horários</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Os Perigos -->
-                    <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-amber-500 flex flex-col justify-between hover:shadow-xl transition-shadow">
-                        <div>
-                            <div class="flex items-center gap-3 mb-4">
-                                <span class="text-3xl">💊</span>
-                                <h3 class="font-bold text-xl text-slate-900">OS PERIGOS DA AUTOMEDICAÇÃO</h3>
-                            </div>
-                            <ul class="space-y-2 text-sm text-slate-600 font-medium list-disc list-inside">
-                                <li>Intoxicação medicamentosa</li>
-                                <li>Desenvolvimento de alergias</li>
-                                <li>Resistência a antibióticos</li>
-                                <li>Má qualidade de vida</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Lembre-se -->
-                    <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-emerald-500 flex flex-col justify-between hover:shadow-xl transition-shadow">
-                        <div>
-                            <div class="flex items-center gap-3 mb-4">
-                                <span class="text-3xl">🍬</span>
-                                <h3 class="font-bold text-xl text-slate-900">REMÉDIO NÃO É BALA!</h3>
-                            </div>
-                            <ul class="space-y-2 text-sm text-slate-600 font-medium list-disc list-inside">
-                                <li>Use apenas com orientação médica</li>
-                                <li>Consulte profissionais certificados</li>
-                                <li>Mantenha fora do alcance de crianças</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO DICAS PRÁTICAS -->
-        <section class="bg-slate-100 py-16 px-6">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-center font-bold text-3xl text-slate-900 mb-2 uppercase tracking-wide">
-                    Tipos de Uso Seguros
-                </h2>
-                <p class="text-center text-slate-600 mb-12 font-medium">
-                    Orientações simples para garantir a eficácia do seu tratamento
-                </p>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                        <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?q=80&w=400&auto=format&fit=crop" alt="Armazenamento correto" class="w-full h-44 object-cover" loading="lazy">
-                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
-                            Armazene os medicamentos em local fresco e seco.
-                        </p>
-                    </div>
-
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=400&auto=format&fit=crop" alt="Organização de rotina" class="w-full h-44 object-cover" loading="lazy">
-                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
-                            Siga os horários exatos definidos pelo seu médico.
-                        </p>
-                    </div>
-
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                        <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=400&auto=format&fit=crop" alt="Descarte seguro" class="w-full h-44 object-cover" loading="lazy">
-                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
-                            Descarte medicamentos vencidos em farmácias ou postos de coleta.
-                        </p>
-                    </div>
-
-                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                        <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=400&auto=format&fit=crop" alt="Checagem de embalagem" class="w-full h-44 object-cover" loading="lazy">
-                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
-                            Confira sempre a validade e a integridade da embalagem.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- DEPOIMENTOS -->
-        <section class="py-16 px-6">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-center font-bold text-3xl text-slate-900 mb-12 uppercase tracking-wide">
-                    Orientação Profissional
-                </h2>
-                <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8 flex flex-col sm:flex-row items-center gap-6 border border-slate-100">
-                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop" alt="Dra. Márcia Maita" class="w-20 h-20 rounded-full object-cover flex-shrink-0 border-2 border-emerald-500 shadow" loading="lazy">
-                    <div>
-                        <p class="italic text-slate-600">
-                            "A orientação médica e o acompanhamento de um farmacêutico evitam interações medicamentosas graves e garantem o sucesso do seu tratamento."
-                        </p>
-                        <p class="mt-3 font-bold text-slate-900">Dra. Márcia Maita</p>
-                        <span class="text-xs text-slate-500 font-semibold uppercase">Farmacêutica Clínica</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
+<!-- FOOTER -->
     <footer class="bg-slate-900 text-slate-300 px-6 py-12">
         <div class="max-w-6xl mx-auto grid sm:grid-cols-3 gap-8">
             <div>
@@ -192,12 +18,15 @@
             </div>
         </div>
         
-        <p class="text-center mt-12 text-xs text-slate-500 max-w-4xl mx-auto border-t border-slate-800 pt-6">
-            Aviso Legal: As informações fornecidas neste site têm caráter puramente educativo e não substituem a consulta com um médico especialista.
-        </p>
+        <!-- Créditos do Projeto Escolar -->
+        <div class="max-w-4xl mx-auto mt-10 pt-6 border-t border-slate-800 text-center">
+            <div class="inline-block bg-slate-800/80 border border-slate-700 rounded-lg px-4 py-2 mb-4">
+                <p class="text-xs sm:text-sm text-emerald-400 font-medium">
+                    🎓 Projeto desenvolvido por alunos do <strong>3º ano</strong> para as disciplinas de <strong>Cidadania e Civismo</strong> e <strong>Educação Digital</strong>.
+                </p>
+            </div>
+            <p class="text-xs text-slate-500">
+                Aviso Legal: As informações fornecidas neste site têm caráter puramente educativo e não substituem a consulta com um médico especialista.
+            </p>
+        </div>
     </footer>
-
-    <!-- Script JavaScript Separado -->
-    <script src="javascript.js"></script>
-</body>
-</html>
