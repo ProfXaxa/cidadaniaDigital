@@ -2,6 +2,7 @@
 
 > **Projeto Escolar Interdisciplinar**  
 > Desenvolvido por alunos do **3º Ano** para as disciplinas de **Cidadania e Civismo** e **Educação Digital**.
+> Aluno: Alexandre✌️
 
 ---
 
