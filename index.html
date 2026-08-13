@@ -4,230 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuide da Sua Saúde | Uso Consciente de Medicamentos</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS Principal -->
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    
+    <!-- Estilos Customizados -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="w-full min-h-screen bg-slate-50 text-slate-800">
 
-    <!-- HEADER / NAVEGAÇÃO -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-heart-pulse"></i>
-                <span>Saúde & Vida</span>
-            </a>
-            <nav class="nav-links" id="navLinks">
-                <a href="#hero">Início</a>
-                <a href="#beneficios">Benefícios</a>
-                <a href="#dicas">Uso Seguro</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#contato">Contato</a>
-            </nav>
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <!-- HERO SECTION -->
+    <header class="hero-bg relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-8">
+            <div class="flex-1 text-white z-10">
+                <h1 class="font-extrabold text-4xl md:text-5xl leading-tight">
+                    CUIDE DA<br><span class="text-emerald-400">SUA SAÚDE!</span>
+                </h1>
+                <p class="mt-4 text-lg text-slate-200">
+                    Uso Consciente de Medicamentos - <strong class="text-white">Sua Segurança em Primeiro Lugar</strong>
+                </p>
+                <a href="#beneficios" class="inline-block mt-8 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-emerald-500/20 hover:-translate-y-0.5">
+                    Saiba Mais Sobre Uso Seguro
+                </a>
+            </div>
+            
+            <div class="flex-1 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=800&auto=format&fit=crop" 
+                     alt="Família sorridente e saudável" 
+                     class="w-full max-w-md rounded-2xl shadow-2xl object-cover border-4 border-white/10" 
+                     loading="lazy">
+            </div>
         </div>
+
+        <!-- Corações decorativos -->
+        <div class="absolute top-6 left-6 text-white/20 text-4xl select-none">♥</div>
+        <div class="absolute top-12 right-12 text-white/15 text-2xl select-none">♥</div>
+        <div class="absolute bottom-8 left-1/4 text-white/10 text-5xl select-none">♥</div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
-        <!-- HERO SECTION -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">CUIDE DA<br>SUA SAÚDE!</h1>
-                    <p class="hero-subtitle">
-                        Uso Consciente de Medicamentos -<br>
-                        <strong>Sua Segurança em Primeiro Lugar</strong>
-                    </p>
-                    <a href="#beneficios" class="btn btn-primary">Saiba Mais Sobre Uso Seguro</a>
-                </div>
-                <div class="hero-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1000&auto=format&fit=crop" alt="Família sorridente e saudável reunida" class="hero-img">
-                </div>
-            </div>
-            <!-- Decorações médicas flutuantes -->
-            <div class="hero-icon icon-1"><i class="fa-solid fa-pills"></i></div>
-            <div class="hero-icon icon-2"><i class="fa-solid fa-heart-circle-check"></i></div>
-            <div class="hero-icon icon-3"><i class="fa-solid fa-notes-medical"></i></div>
-        </section>
-
         <!-- SEÇÃO BENEFÍCIOS -->
-        <section id="beneficios" class="section beneficios-section">
-            <div class="container">
-                <h2 class="section-title text-center">BENEFÍCIOS</h2>
-                
-                <div class="cards-grid">
-                    <!-- CARD 1: VERDE - ATENÇÃO -->
-                    <div class="card card-green">
-                        <div class="card-header">
-                            <div class="card-badge-icon">
-                                <i class="fa-solid fa-exclamation"></i>
+        <section id="beneficios" class="py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-center font-bold text-3xl text-slate-900 mb-12 uppercase tracking-wide">
+                    BENEFÍCIOS
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1: Atenção -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-red-500 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="text-3xl">⚠️</span>
+                                <h3 class="font-bold text-xl text-slate-900">ATENÇÃO!</h3>
                             </div>
-                            <h3>ATENÇÃO!</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul>
+                            <ul class="space-y-2 text-sm text-slate-600 font-medium list-disc list-inside">
                                 <li>Não se automedique</li>
                                 <li>Medicamentos só com prescrição médica</li>
                                 <li>Respeite doses e horários</li>
                             </ul>
-                            <div class="card-illustration">
-                                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=500&auto=format&fit=crop" alt="Frascos de medicamentos e comprimidos">
-                            </div>
                         </div>
                     </div>
 
-                    <!-- CARD 2: VERMELHO - PERIGOS -->
-                    <div class="card card-red">
-                        <div class="card-header">
-                            <div class="card-badge-icon">
-                                <i class="fa-solid fa-triangle-exclamation"></i>
+                    <!-- Card 2: Os Perigos -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-amber-500 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="text-3xl">💊</span>
+                                <h3 class="font-bold text-xl text-slate-900">OS PERIGOS DA AUTOMEDICAÇÃO</h3>
                             </div>
-                            <h3>OS PERIGOS DA AUTOMEDICAÇÃO</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul>
+                            <ul class="space-y-2 text-sm text-slate-600 font-medium list-disc list-inside">
                                 <li>Intoxicação medicamentosa</li>
                                 <li>Desenvolvimento de alergias</li>
                                 <li>Resistência a antibióticos</li>
                                 <li>Má qualidade de vida</li>
                             </ul>
-                            <div class="card-illustration">
-                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=500&auto=format&fit=crop" alt="Médicos analisando prontuário">
-                            </div>
                         </div>
                     </div>
 
-                    <!-- CARD 3: AZUL - LEMBRE-SE -->
-                    <div class="card card-navy">
-                        <div class="card-header">
-                            <div class="card-badge-icon">
-                                <i class="fa-solid fa-shield-halved"></i>
+                    <!-- Card 3: Lembre-se -->
+                    <div class="bg-white rounded-xl p-6 shadow-md border-t-4 border-emerald-500 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <span class="text-3xl">🍬</span>
+                                <h3 class="font-bold text-xl text-slate-900">REMÉDIO NÃO É BALA!</h3>
                             </div>
-                            <h3>LEMBRE-SE:<br>REMÉDIO NÃO É BALA!</h3>
-                        </div>
-                        <div class="card-body">
-                            <ul>
+                            <ul class="space-y-2 text-sm text-slate-600 font-medium list-disc list-inside">
                                 <li>Use apenas com orientação médica</li>
                                 <li>Consulte profissionais certificados</li>
-                                <li>Mantenha medicamentos fora do alcance de crianças</li>
+                                <li>Mantenha fora do alcance de crianças</li>
                             </ul>
-                            <div class="card-illustration">
-                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=500&auto=format&fit=crop" alt="Profissionais de saúde orientando">
-                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- SEÇÃO TIPOS DE USO SEGUROS -->
-        <section id="dicas" class="section dicas-section">
-            <div class="container">
-                <h2 class="section-title text-center">TIPOS DE USO SEGUROS</h2>
-
-                <div class="dicas-layout">
-                    <!-- Banner Ribbon Esquerdo -->
-                    <div class="ribbon-banner">
-                        <h2>Dicas Para<br>o Uso<br>Seguro</h2>
+        <!-- SEÇÃO DICAS PRÁTICAS -->
+        <section class="bg-slate-100 py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-center font-bold text-3xl text-slate-900 mb-2 uppercase tracking-wide">
+                    Tipos de Uso Seguros
+                </h2>
+                <p class="text-center text-slate-600 mb-12 font-medium">
+                    Orientações simples para garantir a eficácia do seu tratamento
+                </p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?q=80&w=400&auto=format&fit=crop" alt="Armazenamento correto" class="w-full h-44 object-cover" loading="lazy">
+                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
+                            Armazene os medicamentos em local fresco e seco.
+                        </p>
                     </div>
 
-                    <!-- Grid de 4 Dicas Práticas -->
-                    <div class="dicas-grid">
-                        <div class="dica-card">
-                            <div class="dica-status check"><i class="fa-solid fa-circle-check"></i></div>
-                            <div class="dica-img-box">
-                                <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?q=80&w=400&auto=format&fit=crop" alt="Armazenamento correto de medicamentos">
-                            </div>
-                            <p class="dica-text">Armazene em local seco, fresco e longe da luz direta.</p>
-                        </div>
-
-                        <div class="dica-card">
-                            <div class="dica-status calendar"><i class="fa-solid fa-calendar-check"></i></div>
-                            <div class="dica-img-box">
-                                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=400&auto=format&fit=crop" alt="Organização de horários de remédios">
-                            </div>
-                            <p class="dica-text">Mantenha uma rotina rigorosa nos horários das doses.</p>
-                        </div>
-
-                        <div class="dica-card">
-                            <div class="dica-status trash"><i class="fa-solid fa-trash-can"></i></div>
-                            <div class="dica-img-box">
-                                <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=400&auto=format&fit=crop" alt="Descarte correto de medicamentos">
-                            </div>
-                            <p class="dica-text">Faça o descarte consciente em pontos de coleta credenciados.</p>
-                        </div>
-
-                        <div class="dica-card">
-                            <div class="dica-status warning"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                            <div class="dica-img-box">
-                                <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=400&auto=format&fit=crop" alt="Atenção à validade do remédio">
-                            </div>
-                            <p class="dica-text">Verifique sempre a data de validade antes do consumo.</p>
-                        </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=400&auto=format&fit=crop" alt="Organização de rotina" class="w-full h-44 object-cover" loading="lazy">
+                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
+                            Siga os horários exatos definidos pelo seu médico.
+                        </p>
                     </div>
+
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=400&auto=format&fit=crop" alt="Descarte seguro" class="w-full h-44 object-cover" loading="lazy">
+                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
+                            Descarte medicamentos vencidos em farmácias ou postos de coleta.
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                        <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=400&auto=format&fit=crop" alt="Checagem de embalagem" class="w-full h-44 object-cover" loading="lazy">
+                        <p class="p-4 text-center font-semibold text-sm text-slate-700">
+                            Confira sempre a validade e a integridade da embalagem.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- SEÇÃO DEPOIMENTOS E CERTIFICAÇÕES -->
-        <section id="depoimentos" class="section depoimentos-section">
-            <div class="container">
-                <h2 class="section-title text-center">TESTIMONIALS / INFORMAÇÃO</h2>
-
-                <div class="depoimentos-layout">
-                    <!-- Cards de Depoimentos / Feedback -->
-                    <div class="testimonials-col">
-                        <div class="testimonial-card">
-                            <div class="testimonial-img">
-                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300&auto=format&fit=crop" alt="Equipe de saúde">
-                            </div>
-                            <div class="testimonial-text">
-                                <p>"A orientação médica correta evita riscos sérios e garante a eficácia total do seu tratamento."</p>
-                                <div class="stars">★★★★★</div>
-                                <h4>Dra. Márcia Maita</h4>
-                                <span>Farmacêutica Clínica</span>
-                            </div>
-                        </div>
-
-                        <div class="testimonial-card card-highlight">
-                            <div class="testimonial-img">
-                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=300&auto=format&fit=crop" alt="Dr. Roberto Silva">
-                            </div>
-                            <div class="testimonial-text">
-                                <p>"Jamais interrompa o uso de antibióticos antes do prazo prescrito, mesmo se os sintomas sumirem."</p>
-                                <div class="stars">★★★★★</div>
-                                <h4>Dr. Roberto Silva</h4>
-                                <span>Infectologista</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Selos e Certificações -->
-                    <div class="badges-col">
-                        <div class="badge-item">
-                            <div class="badge-icon"><i class="fa-solid fa-award"></i></div>
-                            <span>DIRETORIA TÉCNICA</span>
-                        </div>
-                        <div class="badge-item">
-                            <div class="badge-icon"><i class="fa-solid fa-certificate"></i></div>
-                            <span>CERTIFICAÇÃO ISO 9001</span>
-                        </div>
-                        <div class="badge-item">
-                            <div class="badge-icon"><i class="fa-solid fa-circle-check"></i></div>
-                            <span>GARANTIA DE QUALIDADE</span>
-                        </div>
-                        <div class="badge-item">
-                            <div class="badge-icon"><i class="fa-solid fa-user-doctor"></i></div>
-                            <span>USO REGULAMENTADO</span>
-                        </div>
+        <!-- DEPOIMENTOS -->
+        <section class="py-16 px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-center font-bold text-3xl text-slate-900 mb-12 uppercase tracking-wide">
+                    Orientação Profissional
+                </h2>
+                <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8 flex flex-col sm:flex-row items-center gap-6 border border-slate-100">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=200&auto=format&fit=crop" alt="Dra. Márcia Maita" class="w-20 h-20 rounded-full object-cover flex-shrink-0 border-2 border-emerald-500 shadow" loading="lazy">
+                    <div>
+                        <p class="italic text-slate-600">
+                            "A orientação médica e o acompanhamento de um farmacêutico evitam interações medicamentosas graves e garantem o sucesso do seu tratamento."
+                        </p>
+                        <p class="mt-3 font-bold text-slate-900">Dra. Márcia Maita</p>
+                        <span class="text-xs text-slate-500 font-semibold uppercase">Farmacêutica Clínica</span>
                     </div>
                 </div>
             </div>
@@ -235,52 +173,31 @@
     </main>
 
     <!-- FOOTER -->
-    <footer id="contato" class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <!-- Coluna 1: Contato -->
-                <div class="footer-col">
-                    <h3>Contato</h3>
-                    <p><i class="fa-solid fa-location-dot"></i> Av. Paulista, 1000 - São Paulo, SP</p>
-                    <p><i class="fa-solid fa-phone"></i> (11) 3233-0530</p>
-                    <p><i class="fa-solid fa-envelope"></i> contato@saudeevida.com.br</p>
-                </div>
-
-                <!-- Coluna 2: Orientações -->
-                <div class="footer-col">
-                    <h3>Orientação Médica</h3>
-                    <ul>
-                        <li><a href="#">Intoxicação medicamentosa</a></li>
-                        <li><a href="#">Medicamentos sob prescrição</a></li>
-                        <li><a href="#">Medicamentos genéricos</a></li>
-                        <li><a href="#">Respeite doses e horários</a></li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 3: Recursos -->
-                <div class="footer-col">
-                    <h3>Recursos</h3>
-                    <ul>
-                        <li><a href="#">Ministério da Saúde</a></li>
-                        <li><a href="#">ANVISA - Informações</a></li>
-                        <li><a href="#">Pontos de Coleta</a></li>
-                        <li><a href="#">Cartilha de Uso Seguro</a></li>
-                    </ul>
-                </div>
+    <footer class="bg-slate-900 text-slate-300 px-6 py-12">
+        <div class="max-w-6xl mx-auto grid sm:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-bold text-white text-lg mb-3">Contato</h3>
+                <p class="text-sm text-slate-400">Atendimento ao Paciente: (11) 3233-0530</p>
+                <p class="text-sm text-slate-400 mt-1">contato@saudeevida.com.br</p>
             </div>
-
-            <!-- Disclaimer legal -->
-            <div class="footer-disclaimer">
-                <p><strong>Aviso Importante:</strong> As informações contidas neste portal possuem caráter exclusivamente educativo e informativo. Não substituem em hipótese alguma a consulta, o diagnóstico ou o tratamento médico profissional. Sempre consulte seu médico ou farmacêutico antes de iniciar qualquer tratamento com medicamentos.</p>
+            <div>
+                <h3 class="font-bold text-white text-lg mb-3">Recursos</h3>
+                <p class="text-sm text-slate-400">Cartilha de Uso Seguro de Medicamentos</p>
+                <p class="text-sm text-slate-400 mt-1">Pontos de Coleta e Descarte Consciente</p>
             </div>
-
-            <div class="footer-bottom text-center">
-                <p>&copy; 2026 Saúde & Vida. Todos os direitos reservados.</p>
+            <div>
+                <h3 class="font-bold text-white text-lg mb-3">Horários</h3>
+                <p class="text-sm text-slate-400">Segunda a Sexta: 08h às 18h</p>
+                <p class="text-sm text-slate-400 mt-1">Sábados: 08h às 12h</p>
             </div>
         </div>
+        
+        <p class="text-center mt-12 text-xs text-slate-500 max-w-4xl mx-auto border-t border-slate-800 pt-6">
+            Aviso Legal: As informações fornecidas neste site têm caráter puramente educativo e não substituem a consulta com um médico especialista.
+        </p>
     </footer>
 
-    <!-- Script JS -->
-    <script src="script.js"></script>
+    <!-- Script JavaScript Separado -->
+    <script src="javascript.js"></script>
 </body>
 </html>
