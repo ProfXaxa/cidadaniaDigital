@@ -1,8 +1,9 @@
 # 💊 Cuide da Sua Saúde — Uso Consciente de Medicamentos
 
 > **Projeto Escolar Interdisciplinar**  
-> Desenvolvido por alunos do **3º Ano** para as disciplinas de **Cidadania e Civismo** e **Educação Digital**.
-> Aluno: Alexandre✌️
+> 🏫 **Escola:** Colégio Cívico-Militar D. Pedro I  
+> 📚 **Disciplinas:** Cidadania e Civismo & Educação Digital  
+> 🎓 **Turma:** 3º Ano do Ensino Médio  
 
 ---
 
@@ -11,6 +12,18 @@
 Este site foi criado como uma ferramenta educativa e de conscientização comunitária. O objetivo principal é alertar a população sobre os riscos da **automedicação** e promover práticas corretas no uso, armazenamento e descarte de medicamentos.
 
 O projeto une o conhecimento sobre **Cidadania e Civismo** (saúde pública, responsabilidade social e bem-estar coletivo) com as habilidades práticas de **Educação Digital** (desenvolvimento web, design responsivo e estruturação de código).
+
+---
+
+## 👥 Autores do Projeto
+
+* **Escola:** Colégio Cívico-Militar D. Pedro I
+* **Turma:** 3º Ano
+* **Alunos integrantes:**
+  * [Nome do Aluno 1]
+  * [Nome do Aluno 2]
+  * [Nome do Aluno 3]
+* **Disciplinas:** Cidadania e Civismo | Educação Digital
 
 ---
 
@@ -28,10 +41,8 @@ O projeto foi construído utilizando tecnologias modernas de desenvolvimento web
 
 ## 📂 Estrutura de Arquivos
 
-O código foi organizado de forma limpa e modular:
-
 ```text
 ├── index.html        # Estrutura principal da página
 ├── style.css         # Estilização e regras customizadas
 ├── javascript.js     # Scripts e interatividade
-└── README.md         # Documentação do projeto# cidadaniaDigital
+└── README.md         # Documentação do projeto
